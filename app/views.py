@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+
+
 # Create your views here.
 
 def mostrar_index(request):
@@ -7,3 +9,6 @@ def mostrar_index(request):
 
 def mostrar_login(request):
     return render(request, 'login.html')
+
+def cadastro(request):
+    return render (request,'form.html', {'form':form})
